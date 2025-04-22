@@ -1,0 +1,102 @@
+.heading {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 480px;
+    background: linear-gradient(to right, #232323 60%, #ffa600 40%);
+    overflow: hidden;
+    padding: 0 60px;
+}
+
+/* Orange background shape */
+.heading::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 44%;
+    height: 100%;
+    background: #ffa600;
+    border-top-left-radius: 220px 240px;
+    border-bottom-left-radius: 220px 240px;
+    z-index: 1;
+}
+
+/* Plate image styling */
+.right#food {
+    position: absolute;
+    right: 80px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 340px;
+    height: 340px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+    z-index: 2;
+    background: #fff;
+    border: 8px solid #fff;
+    background-image: url('../../home.jpg');
+    background-size: cover;
+    background-position: center;
+   
+}
+
+/* If you use an <img> tag inside .right, use this: */
+.right#food img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+    background: #fff;
+    border: 8px solid #fff;
+    z-index: 2;
+}
+
+/* Left text styles */
+.left {
+    color: white;
+    z-index: 3;
+    position: relative;
+}
+
+.left p:first-child {
+    font-size: 24px;
+    font-family: 'Georgia', serif;
+    margin-bottom: 10px;
+}
+
+.left h1 {
+    font-size: 60px;
+    font-weight: bold;
+    margin: 0 0 10px 0;
+    font-family: 'Georgia', serif;
+}
+
+.left p:last-child {
+    font-size: 20px;
+    color: #ffa600;
+    font-style: italic;
+}
+
+/* Bottom food images */
+.bottom {
+    position: absolute;
+    left: 70px;
+    bottom: 40px;
+    z-index: 4;
+    display: flex;
+    gap: 30px;
+}
+
+.menu .food-thumb {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    background: #fff;
+    border: 4px solid #fff;
+}

@@ -1,0 +1,214 @@
+body {
+    background: #fafbfc;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.header-bar {
+    background: #111;
+    color: #fff;
+    padding: 22px 40px 0 40px;
+    font-size: 28px;
+    letter-spacing: 2px;
+    font-family: 'Georgia', serif;
+    position: relative;
+}
+
+.navbar {
+    background: #22223b;
+    padding: 12px 0 12px 0;
+    margin-top: 12px;
+}
+
+.navbar a {
+    color: #fff;
+    margin-right: 28px;
+    font-size: 17px;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.navbar a:hover {
+    color: #4f8cff;
+}
+
+.main-content {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin: 60px auto 0 auto;
+    max-width: 1200px;
+}
+
+.food-section, .cart-section {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(34,34,59,0.06);
+    padding: 28px 22px 22px 22px;
+    min-width: 420px;
+}
+
+.food-section {
+    flex: 1.1;
+}
+
+.cart-section {
+    flex: 1;
+}
+
+h2 {
+    font-size: 22px;
+    margin-bottom: 18px;
+    color: #22223b;
+}
+
+.search-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 12px;
+}
+
+.search-box {
+    padding: 8px 12px;
+    border: 1px solid #d1d5db;
+    border-radius: 5px;
+    font-size: 15px;
+    width: 180px;
+}
+
+.search-btn, .showall-btn {
+    padding: 8px 18px;
+    border-radius: 5px;
+    border: none;
+    background: #22223b;
+    color: #fff;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.showall-btn {
+    background: #e5e5e5;
+    color: #22223b;
+    margin-left: 8px;
+}
+
+.search-btn:hover {
+    background: #4f8cff;
+}
+
+.food-table-wrapper, .cart-table-wrapper {
+    max-height: 330px;
+    overflow-y: auto;
+    margin-bottom: 20px;
+}
+
+.food-table, .cart-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+}
+
+.food-table th, .cart-table th {
+    background: #f4f4f4;
+    color: #22223b;
+    font-weight: 600;
+    padding: 8px 6px;
+    border-bottom: 2px solid #e0e0e0;
+}
+
+.food-table td, .cart-table td {
+    padding: 8px 6px;
+    border-bottom: 1px solid #e0e0e0;
+    text-align: center;
+    font-size: 15px;
+}
+
+.qty-input {
+    width: 60px;
+    padding: 5px;
+    border-radius: 4px;
+    border: 1px solid #d1d5db;
+    font-size: 15px;
+    margin-right: 5px;
+}
+
+.add-btn {
+    background: #1976d2;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 6px 12px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.add-btn:hover {
+    background: #1565c0;
+}
+
+.delete-btn {
+    background: #22223b;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 6px 12px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.delete-btn:hover {
+    background: #d32f2f;
+}
+
+.cart-totals table {
+    width: 100%;
+    margin-top: 18px;
+    border-collapse: collapse;
+}
+
+.cart-totals td {
+    padding: 6px 10px;
+    font-size: 15px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.cart-totals tr:last-child td {
+    font-weight: bold;
+    border-bottom: none;
+}
+
+.cart-actions {
+    margin-top: 24px;
+    display: flex;
+    gap: 16px;
+}
+
+.pay-btn {
+    padding: 10px 20px;
+    border-radius: 6px;
+    border: none;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.pay-btn.cash {
+    background: #357a5b;
+    color: #fff;
+}
+
+.pay-btn.card {
+    background: #1976d2;
+    color: #fff;
+}
+
+.pay-btn.new {
+    background: #ffd600;
+    color: #22223b;
+}

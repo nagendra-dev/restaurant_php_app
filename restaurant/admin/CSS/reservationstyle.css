@@ -1,0 +1,168 @@
+body {
+    background: #fafbfc;
+    font-family: 'Segoe UI', 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h2, .panel-title {
+    color: #22223b;
+    margin-bottom: 16px;
+}
+
+.rescontainer {
+    margin: 30px 0 0 0;
+    padding: 0 30px;
+}
+
+.additem {
+    margin-bottom: 12px;
+}
+
+.btnitem {
+    background: #22223b;
+    color: #fff;
+    border: none;
+    padding: 8px 22px;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: background 0.2s;
+    margin-bottom: 8px;
+    display: inline-block;
+}
+
+.btnitem:hover {
+    background: #4f8cff;
+    color: #fff;
+}
+
+/* Style for Bootstrap-like form-control */
+input[type="text"].form-control, .form-control {
+    width: 420px;
+    padding: 10px;
+    border: 1px solid #d1d5db;
+    border-radius: 5px;
+    margin: 10px 0 18px 0;
+    font-size: 15px;
+    background: #f8fafc;
+    transition: border 0.2s;
+    display: inline-block;
+}
+
+input[type="text"].form-control:focus, .form-control:focus {
+    border: 1.5px solid #4f8cff;
+    outline: none;
+    background: #fff;
+}
+
+/* Button Styles */
+button, input[type="submit"], .btn, .btn-dark {
+    background: #22223b;
+    color: #fff;
+    border: none;
+    padding: 8px 22px;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    margin-top: 6px;
+    transition: background 0.2s;
+    display: inline-block;
+}
+
+button:hover, input[type="submit"]:hover, .btn:hover, .btn-dark:hover {
+    background: #4f8cff;
+}
+
+.colmd {
+    display: inline-block;
+    margin-left: 12px;
+    vertical-align: top;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+/* Table Styles */
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 18px;
+    background: #fff;
+    box-shadow: 0 2px 10px rgba(34,34,59,0.04);
+}
+
+th, td {
+    border: 1px solid #22223b;
+    padding: 7px 10px;
+    text-align: center;
+    font-size: 15px;
+}
+
+th {
+    background: #22223b;
+    color: #fff;
+    font-weight: 600;
+}
+
+tr:nth-child(even) {
+    background: #f6f6f6;
+}
+
+tr:hover {
+    background: #e8f0fe;
+}
+
+a {
+    color: #4f8cff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.showall {
+    float: right;
+    font-size: 13px;
+    color: #a17fc1;
+    margin-right: 8px;
+}
+
+.wrapper {
+    width: 1300px;
+    padding-left: 200px;
+    padding-top: 20px;
+}
+
+/* Header and Navbar (if used) */
+.header-bar {
+    background: #111;
+    color: #fff;
+    padding: 22px 40px;
+    font-size: 28px;
+    letter-spacing: 2px;
+    font-family: 'Georgia', serif;
+}
+
+.navbar {
+    background: #22223b;
+    padding: 12px 40px;
+}
+
+.navbar a {
+    color: #fff;
+    margin-right: 28px;
+    font-size: 17px;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.navbar a:hover {
+    color: #4f8cff;
+}

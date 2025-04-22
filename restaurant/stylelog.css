@@ -1,0 +1,112 @@
+/* General page styling */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-image: url('resto.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-attachment: fixed;
+}
+
+/* Glassy login box */
+.login-container {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 40px;
+    width: 300px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+    color: white;
+    text-align: center;
+    animation: fadeIn 0.5s ease-in;
+}
+
+/* Heading */
+.login-container h2 {
+    margin-bottom: 30px;
+    font-size: 24px;
+    font-weight: bold;
+    background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Input fields */
+.login-container input[type="text"],
+.login-container input[type="password"] {
+    width: 100%;
+    padding: 12px 15px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.3);
+    color: white;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.login-container input[type="text"]:focus,
+.login-container input[type="password"]:focus {
+    background: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+}
+
+/* Placeholder color for better visibility */
+.login-container input::placeholder {
+    color: #ddd;
+}
+
+/* Button styling */
+.login-container button {
+    width: 100%;
+    padding: 12px 15px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 25px;
+    background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s ease;
+    box-shadow: 0 4px 15px rgba(255, 107, 107, 0.3);
+}
+
+.login-container button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(255, 107, 107, 0.4);
+}
+
+/* Error state */
+.login-container .error {
+    border: 2px solid #ff6b6b;
+    background: rgba(255, 107, 107, 0.1);
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive design */
+@media (max-width: 480px) {
+    .login-container {
+        width: 90%;
+        padding: 30px 20px;
+    }
+    
+    .login-container h2 {
+        font-size: 20px;
+    }
+}
