@@ -1,9 +1,9 @@
 -- Dummy entries for login
 TRUNCATE TABLE login;
-INSERT INTO login (username, password) VALUES
-('admin', 'admin123'),
-('manager', 'manager@2024'),
-('waiter', 'waiterpass');
+INSERT INTO login (username, password, role) VALUES
+('admin', 'admin123', 'admin'),
+('manager', 'manager@2024', 'manager'),
+('waiter', 'waiterpass', 'waiter');
 
 -- Dummy entries for table_availability
 TRUNCATE TABLE table_availability;
@@ -48,3 +48,5 @@ INSERT INTO bill_items (bill_id, item_id, quantity) VALUES
 (1, 'I1', 2),
 (1, 'I2', 1),
 (2, 'I3', 3);
+
+

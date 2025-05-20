@@ -10,13 +10,23 @@
 <div class="top">
     <div class="navbar-brand">NP RESTO</div>
     <div class="navi">
-        <a href="home.php" class="homelink">Home</a>
-        <a href="menu.php" class="homelink">Menu</a>
-        <a href="reservation-panel.php" class="homelink">Table reservation</a>
-        <a href="table_update.php" class="homelink">Table</a>
-       <!-- <a href="posTable.php" class="homelink">Bill</a> -->
-        <a href="posCart.php" class="homelink">Bill</a>
-    </div>
+    <?php
+    session_start();
+    $role = isset($_SESSION['role']) ? $_SESSION['role'] : 'user';
+    if ($role === 'admin') {
+        // Admin menu
+        echo '<a href="home.php" class="homelink">Home</a>';
+        echo '<a href="menu.php" class="homelink">Menu</a>';
+        echo '<a href="reservation-panel.php" class="homelink">Table reservation</a>';
+        echo '<a href="table_update.php" class="homelink">Table</a>';
+        echo '<a href="posCart.php" class="homelink">Bill</a>';
+    } else {
+        // Normal user menu
+        echo '<a href="home.php" class="homelink">Home</a>';
+        echo '<a href="../order_food.php" class="homelink">Place Order</a>';
+    }
+    ?>
+</div>
     <div class="menu-toggle">
         <button onClick="toggleForm('homeform')" class="fa-solid fa-bars"></button>
         <div id="homeform" style="display:none;">

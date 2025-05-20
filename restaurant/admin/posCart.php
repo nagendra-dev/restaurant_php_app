@@ -48,7 +48,7 @@ if (!isset($_SESSION['cart'])) {
             <a href="menu.php">Menu</a>
             <a href="reservation-panel.php">Table reservation</a>
             <a href="posTable.php">Table</a>
-            <a href="bill.php">Bill</a>
+            <a href="posCart.php">Bill</a>
         </nav>
     </div>
     <div class="main-content">
